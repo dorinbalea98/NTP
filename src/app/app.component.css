@@ -1,0 +1,23 @@
+.item {
+    width: 100px;
+    height: 80px;
+}
+
+.image {
+    margin-left: auto;
+    display: block;
+}
+
+.text {
+    display: block;
+    text-align: center;
+}
+
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }

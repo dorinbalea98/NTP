@@ -22,8 +22,12 @@ public class DemoApplication {
 	@Bean
 	CommandLineRunner runner(ContentRepository contentRepository) {
 		return args -> {
-			contentRepository.save(new Content("Lecu", "Zeu", ContentType.FOLDER, null, null, null));
-			contentRepository.save(new Content("Ana", "Plm", ContentType.ASSET, "video", "https://youtube.com", 1L));
+			contentRepository.save(new Content("Tata", "Sef la bani", ContentType.FOLDER, null, null, null));
+			contentRepository.save(new Content("Mama", "Sefa la dusmani", ContentType.FOLDER, null, null, null));
+			contentRepository.save(new Content("Ana", "Mere", ContentType.ASSET, "video", "https://www.youtube.com/watch?v=bltCt00GGb0", 1L));
+			contentRepository.save(new Content("Fiu1", "NEFIU", ContentType.FOLDER, null, null, 1L));
+			contentRepository.save(new Content("Nepot1", "G", ContentType.FOLDER, null, null, 4L));
+			contentRepository.save(new Content("Asta", "Black Clover", ContentType.ASSET, "video", "https://www.youtube.com/watch?v=8ll4gFYdkcA", 4L));
 		};
 	}
 }

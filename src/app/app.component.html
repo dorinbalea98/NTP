@@ -1,0 +1,20 @@
+<button (click)="back()">Back</button>
+<button (click)="cardView = !cardView">Switch</button>
+
+<div style="display: flex; margin-top: 20px;" *ngIf="cardView; else treeView">
+    <div *ngFor="let item of data" class="item">
+        <img [src]="item.type === 'FOLDER' ? 'assets/images/folder.jpg' : 'assets/images/asset.png'" width="80px"
+            height="80px" class="image" (click)="clicked(item)">
+        <span class="text">{{item.name}}</span>
+        <span class="text">{{item.title}}</span>
+    </div>
+</div>
+
+<ng-template #treeView>
+
+</ng-template>
+
+<div *ngIf="showAsset" (click)="showAsset=false" class="center-screen">
+    <iframe width="420" height="315" [src]="url">
+</iframe>
+</div>
